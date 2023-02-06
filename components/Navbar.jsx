@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -8,7 +9,7 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState("transparent");
   const [linkColor, setLinkColor] = useState("#ffffff");
   // const [position, setPosition] = useState('fixed')
- 
+
 
   const handleNav = () => {
     setNav(!nav);
@@ -31,35 +32,35 @@ const Navbar = () => {
 
   return (
     <>
-   <div
+      <div
         style={{ backgroundColor: `${navBg}` }}
         className={
           shadow
-            ? "fixed w-full h-20 shadow-md shadow-gray-400 z-[100] ease-in-out duration-300"
-            : "fixed w-full h-20 z-[100]"
+            ? "fixed w-full shadow-md shadow-gray-400 z-[100] ease-in-out duration-300"
+            : "fixed w-full z-[100]"
         }>
-        <div className="flex justify-between items-center w-full h-full px-1 2xl:px-16">
+        <div className="flex justify-between items-center max-w-6xl h-28 px-5 md:px-10 mx-auto">
+          <Image src="/assets/logo.png" alt="logo" height={40} width={280} />
           <div>
             <ul
               style={{ color: `${linkColor}` }}
-              className="hidden md:flex space-x-8 mx-20">
-              <li className="ml-7 text-md uppercase navHover">
+              className="hidden md:flex space-x-6 items-center">
+              <li className="text-sm uppercase navHover">
                 <Link href="/">Home</Link>
               </li>
-              <li className="ml-7  uppercase navHover">
+              <li className="text-sm uppercase navHover">
                 <Link href="/#company">UNREAL ENGINE</Link>
               </li>
-              <li className="ml-7  uppercase navHover">
+              <li className="text-sm uppercase navHover">
                 <Link href="/#UNITY">UNITY</Link>
               </li>
-              <li className="ml-7  uppercase navHover">
+              <li className="text-sm uppercase navHover">
                 <Link href="/#GODOT">GODOT</Link>
               </li>
-
-              <li className="ml-7  uppercase navHover">
+              <li className="text-sm uppercase navHover">
                 <Link href="/#newsletter">Contact</Link>
               </li>
-              <li className="ml-7  uppercase navHover">
+              <li className="text-sm uppercase navHover">
                 <Link href="/about">About Us</Link>
               </li>
             </ul>
@@ -85,30 +86,16 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] px-8 py-5 ease-in duration-500"
+                : "fixed left-[-100%] top-0 px-8 py-5 ease-in duration-500"
             }>
             <div>
               <div className="flex w-full items-center justify-between">
-                {/* <Link href="/">
-                  <div className={
-                  shadow
-                    ? "cursor-pointer bg-gray-200 px-1 py-2 rounded-md"
-                    : "cursor-pointer"
-                }>
-                    <Image src={NavLogo} width="140" height="40" alt="/" />
-                  </div>
-                </Link> */}
                 <div
                   onClick={handleNav}
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ">
+                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ml-auto">
                   <AiOutlineClose className="text-black" />
                 </div>
-              </div>
-              <div className="border-b border-gray-300 my-4">
-                <p className="w-[85%] md:w-[90%] py-4 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur.
-                </p>
               </div>
             </div>
             <div className="py-4 flex flex-col">
@@ -120,12 +107,12 @@ const Navbar = () => {
                 </Link>
                 <Link href="/#company">
                   <li onClick={() => setNav(false)} className="py-4 text-sm uppercase">
-                  UNREAL ENGINE
+                    UNREAL ENGINE
                   </li>
                 </Link>
                 <Link href="/#UNITY">
                   <li onClick={() => setNav(false)} className="py-4 text-sm uppercase">
-                  UNITY
+                    UNITY
                   </li>
                 </Link>
                 <Link href="/#GODOTS">
