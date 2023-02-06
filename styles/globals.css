@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* add swiper */
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+@layer components {
+  .banner {
+    background-image: url("../public/assets/shoe3.jpg");
+    @apply bg-cover bg-no-repeat mt-0 pt-[460px] pb-[100px] object-fill object-center w-full h-screen;
+  }
+  .navHover {
+    @apply relative text-lg  uppercase;
+  }
+  .navHover::after {
+    @apply content-[''] bg-cyan-500 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-700;
+  }
+  .navHover:hover::after {
+    @apply w-[100%];
+  }
+}
