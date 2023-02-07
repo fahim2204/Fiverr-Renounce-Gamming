@@ -55,6 +55,38 @@ const Card = () => {
             </p>
           </div>
         </div>
+        <div className="h-full text-center mb-4 drop-shadow-xl bg-white border border-gray-200 text-gray-900  ">
+          <div className="relative block w-full group">
+            <Image src={product1} alt=".." className="" />
+            <div className="absolute top-1/2 right-1/2 transition-all transform translate-x-1/2 translate-y-8 opacity-0  group-hover:opacity-100  group-hover:translate-y-0">
+              <button className="text-sm  bg-white  hover:bg-red-400 transition duration-1000 hover:text-white ">
+                Add to wishlist
+              </button>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h2 className="text-xl  font-bold ">Here Self Storage</h2>
+            <p className="text-md text-gray-600">
+              Starting Bid: <span className="text-md font-bold">$100</span>
+            </p>
+          </div>
+        </div>
+        <div className="h-full text-center mb-4 drop-shadow-xl bg-white border border-gray-200 text-gray-900  ">
+          <div className="relative block w-full group">
+            <Image src={product1} alt=".." className="" />
+            <div className="absolute top-1/2 right-1/2 transition-all transform translate-x-1/2 translate-y-8 opacity-0  group-hover:opacity-100  group-hover:translate-y-0">
+              <button className="text-sm  bg-white  hover:bg-red-400 transition duration-1000 hover:text-white ">
+                Add to wishlist
+              </button>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h2 className="text-xl  font-bold ">Here Self Storage</h2>
+            <p className="text-md text-gray-600">
+              Starting Bid: <span className="text-md font-bold">$100</span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
