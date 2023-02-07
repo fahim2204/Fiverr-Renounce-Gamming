@@ -4,95 +4,72 @@ import React from "react";
 const Gallery = () => {
   return (
     <div className="max-w-6xl mx-auto px-5 md:px-10 mt-12 mb-8">
-      <div className="grid lg:grid-cols-2 gap-4">
-        <div className="grid lg:grid-rows-2 gap-4 mb-4">
-          <div className="md:p-2 p-1 relative">
-            <Link href="/#gallery">
-              <div className="absolute w-full">
-                <img
-                  alt="gallery"
-                  className="w-full h-full object-cover object-center block inset-0"
-                  src="https://ibid.modeltheme.com/self-storage-auctions/wp-content/uploads/2021/03/Storage-banner2.jpg"
-                />
-              </div>
-              <div className="relative z-10 m-6  p-6 px-8 hover:border hover:border-gray-300 ease-in duration-700 md:p-12 md:m-12">
-                <h2 className="text-xl md:text-3xl font-extrabold text-white uppercase relative">
-                  Assorted Boxes
-                </h2>
-                <p className="tracking-wider">20 Storages</p>
-                <button className="hidden md:block bg-transparent text-white border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 mt-14 text-sm uppercase duration-300">
-                  View More
-                </button>
-              </div>
+      <div className="grid lg:grid-cols-2 gap-2">
+        <div className="relative">
+          <img
+            alt="gallery"
+            className="object-cover object-center w-full"
+            src="https://source.unsplash.com/500x330?sig=15"
+          />
+          <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 z-1 text-white w-5/6 h-5/6 p-8 hover:border hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+            <h2 className="text-xl md:text-3xl font-extrabold uppercase relative">
+              assorted boxes
+            </h2>
+            <p className="tracking-wider mb-16">20 Storages</p>
+            <Link href="#" className="bg-transparent border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 text-sm uppercase duration-300">
+              View More
             </Link>
           </div>
-
-          <Link href="/#gallery">
-            <div className="md:p-2 p-1 w-full relative">
-              <div className="absolute w-full">
-                <img
-                  alt="gallery"
-                  className="w-full h-full object-cover object-center block"
-                  src="https://ibid.modeltheme.com/self-storage-auctions/wp-content/uploads/2021/03/Storage-banner4.jpg"
-                />
-              </div>
-              <div className="relative z-10 m-6 p-4 px-8 hover:border hover:border-gray-300 ease-in duration-700 md:p-12 md:m-12">
-                <h2 className="text-xl md:text-3xl font-extrabold text-white uppercase relative">
-                  HouseHold Goods
-                </h2>
-                <p className="tracking-wider">13 Storages</p>
-                <button className="hidden md:block bg-transparent text-white border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 mt-8  text-sm uppercase duration-300">
-                  View More
-                </button>
-              </div>
-            </div>
-          </Link>
+        </div>
+        <div className="relative">
+          <img
+            alt="gallery"
+            className="object-cover object-center w-full"
+            src="https://source.unsplash.com/500x330?sig=16"
+          />
+          <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 z-1 text-white w-5/6 h-5/6 p-8 hover:border hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+            <h2 className="text-xl md:text-3xl font-extrabold uppercase relative">
+              Sporting Goods
+            </h2>
+            <p className="tracking-wider mb-16">30 Storages</p>
+            <Link href="#" className="bg-transparent border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 text-sm uppercase duration-300">
+              View More
+            </Link>
+          </div>
+        </div>
+        <div className="relative">
+          <img
+            alt="gallery"
+            className="object-cover object-center w-full"
+            src="https://source.unsplash.com/500x330?sig=17"
+          />
+          <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 z-1 text-white w-5/6 h-5/6 p-8 hover:border hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+            <h2 className="text-xl md:text-3xl font-extrabold uppercase relative">
+              household goods
+            </h2>
+            <p className="tracking-wider mb-16">13 Storages</p>
+            <Link href="#" className="bg-transparent border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 text-sm uppercase duration-300">
+              View More
+            </Link>
+          </div>
+        </div>
+        <div className="relative">
+          <img
+            alt="gallery"
+            className="object-cover object-center w-full"
+            src="https://source.unsplash.com/500x330?sig=18"
+          />
+          <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 z-1 text-white w-5/6 h-5/6 p-8 hover:border hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+            <h2 className="text-xl md:text-3xl font-extrabold uppercase relative">
+              Tools workshop
+            </h2>
+            <p className="tracking-wider mb-16">11 Storages</p>
+            <Link href="#" className="bg-transparent border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 text-sm uppercase duration-300">
+              View More
+            </Link>
+          </div>
         </div>
 
-        {/* ----------right------ */}
-        <div className="grid lg:grid-rows-2 gap-4">
-          <Link href="/#gallery">
-            <div className="md:p-2 p-1 w-full relative">
-              <div className="absolute w-full">
-                <img
-                  alt="gallery"
-                  className="w-full h-full object-cover object-center block inset-0"
-                  src="https://ibid.modeltheme.com/self-storage-auctions/wp-content/uploads/2021/03/Storage-banner1.jpg"
-                />
-              </div>
-              <div className="relative z-10 m-6 p-6 mb-5 px-8 hover:border hover:border-gray-300 ease-in duration-700 md:p-12 md:m-12">
-                <h2 className="text-xl md:text-3xl font-extrabold text-white uppercase relative">
-                  Sporting Goods
-                </h2>
-                <p className="tracking-wider">30 Storages</p>
-                <button className="hidden md:block bg-transparent text-white border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 mt-14 text-sm uppercase duration-300">
-                  View More
-                </button>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/#gallery">
-            <div className="md:p-2 p-1 relative 2xl:mt-44">
-              <div className="absolute w-full">
-                <img
-                  alt="gallery"
-                  className="  object-cover object-center block"
-                  src="https://ibid.modeltheme.com/self-storage-auctions/wp-content/uploads/2021/03/Storage-banner3.jpg"
-                />
-              </div>
-              <div className="relative z-10 m-6 p-6 px-8 hover:border hover:border-gray-300 ease-in duration-700 md:p-12 md:m-12">
-                <h2 className="text-xl md:text-3xl font-extrabold text-white uppercase relative">
-                  Tools Workshop
-                </h2>
-                <p className="tracking-wider">11 Storages</p>
-                <button className="hidden md:block bg-transparent text-white border border-white rounded-md hover:bg-white hover:text-black px-5 py-2 mt-14 text-sm uppercase duration-300">
-                  View More
-                </button>
-              </div>
-            </div>
-          </Link>
-        </div>
       </div>
     </div>
   );

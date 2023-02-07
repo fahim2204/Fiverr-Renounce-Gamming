@@ -5,8 +5,8 @@ import product2 from "../public/assets/product2.jpg";
 import { AiFillPrinter, AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
 const Product = () => {
     return (
-        <div>
-            <div className="grid md:grid-cols-3 gap-8 mx-4 py-5 pb-12 md:pb-24 2xl:mt-32">
+        <div className="max-w-6xl px-5 md:px-10 mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 py-5 pb-12 md:pb-24 2xl:mt-32">
                 {/* span-1 */}
 
                 <div className=" w-full h-full relative">
@@ -157,10 +157,9 @@ const Product = () => {
                 </div>
             </div>
 
-            {/*//todo ------card2--------- */}
 
 
-            <div className="grid md:grid-cols-3 gap-8 mx-4 py-5">
+            <div className="grid md:grid-cols-3 gap-8 py-5">
                 {/* span-1 */}
 
                 <div className="mx-1 w-full relative">
