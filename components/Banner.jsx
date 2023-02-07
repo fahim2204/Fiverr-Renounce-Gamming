@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="relative h-screen -z-1">
      <div>
         <Image
-        className="brightness-50 -z-1"
+        className="brightness-50 -z-50"
         layout="fill"
         objectFit="cover"
         // style={{objectFit:"cover"}}
