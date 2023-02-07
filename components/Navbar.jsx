@@ -15,36 +15,13 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 40) {
-        setShadow(true);
-        setNavBg("#ffffff");
-        setLinkColor("#000000");
-      } else {
-        setShadow(false);
-        setNavBg("transparent");
-        setLinkColor("#ffffff");
-      }
-    };
-    window.addEventListener("scroll", handleShadow);
-  }, []);
-
   return (
     <>
-      <div
-        style={{ backgroundColor: `${navBg}` }}
-        className={
-          shadow
-            ? "fixed w-full shadow-md shadow-gray-400 z-[100] ease-in-out duration-300"
-            : "fixed w-full z-[100]"
-        }>
+      <div className="ease-in-out duration-300 w-full z-50">
         <div className="flex justify-between items-center max-w-6xl h-28 px-5 md:px-10 mx-auto">
-          <Image src="/assets/logo.png" alt="logo" height={40} width={280} />
+          <Image src="/assets/logo.png" className="z-50" alt="logo" height={40} width={280} />
           <div>
-            <ul
-              style={{ color: `${linkColor}` }}
-              className="hidden md:flex space-x-6 items-center">
+            <ul className="hidden md:flex space-x-6 items-center text-white">
               <li className="text-sm uppercase navHover">
                 <Link href="/">Home</Link>
               </li>
@@ -65,10 +42,8 @@ const Navbar = () => {
               </li>
             </ul>
             {/* Hamburger Icon */}
-            <div
-              style={{ color: `${linkColor}` }}
-              onClick={handleNav}
-              className="md:hidden rounded-full bg-gray-600 p-2">
+            <div onClick={handleNav}
+              className="md:hidden rounded-full bg-gray-600 p-2 z-[100]">
               <AiOutlineMenu size={25} className="text-white" />
             </div>
           </div>
@@ -79,7 +54,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
+              ? "md:hidden fixed left-0 top-0 w-full z-50 h-screen bg-black/70"
               : ""
           }>
           {/* Side Drawer Menu */}

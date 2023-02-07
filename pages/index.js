@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>Renounce Gaming</title>
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <Banner />
       <BestSelling />
       {/* <Card />

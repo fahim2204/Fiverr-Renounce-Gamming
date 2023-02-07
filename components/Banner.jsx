@@ -1,19 +1,21 @@
 import React from "react";
 import banner from "../public/assets/shoe6.jpg";
 import Image from "next/image";
+import Navbar from "./Navbar";
 
 const Banner = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen -z-1">
      <div>
         <Image
-        className="brightness-50"
-          layout="fill"
-          objectFit="cover"
-          // style={{objectFit:"cover"}}
-          src={banner}
-          alt="Banner" />
+        className="brightness-50 -z-1"
+        layout="fill"
+        objectFit="cover"
+        // style={{objectFit:"cover"}}
+        src={banner}
+        alt="Banner" />
      </div>
+        <Navbar/>
       <div className="absolute top-1/2 max-w-6xl w-full px-5 md:px-10 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-10 ">
         <h2 className="py-2 text-center text-3xl md:text-6xl font-extrabold leading-10 tracking-normal">
           Best Place for Unfinished Games
