@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="max-w-6xl px-5 md:px-10 mx-auto pt-12 gap-1 md:gap-5 grid md:grid-cols-4  md:items-center  pb-8  ">
                     <div className="mt-5 justify-center text-center items-center md:mt-0 md:text-left">
                         <div className=" px-4">
-                            <Image src={logo} className="ml-[35%] md:ml-0" />
+                            <Image src={logo} className="max-w-100" />
                             <p className="pt-2">contact@example.com</p>
                             <p>+1-541-754-3010</p>
                         </div>
